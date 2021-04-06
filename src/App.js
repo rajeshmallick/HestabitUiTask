@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import Header from '../src/components/header'
+import Bestapp from '../src/components/bestapp'
+import Trustedcompany from '../src/components/trustedcompany'
+import Footer from '../src//components/footer'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='custom_padding'>
+    <Header/>
+    <Bestapp/>
+    <Trustedcompany/>
+    </div>
+    <Footer/> 
     </div>
   );
 }
